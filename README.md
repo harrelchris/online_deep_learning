@@ -11,6 +11,12 @@ pip3 install torch torchvision torchaudio
 python3 -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'MPS (GPU) available: {torch.backends.mps.is_available()}')"
 ```
 
+## Download Data
+
+https://www.cs.utexas.edu/~bzhou/dl_class/classification_data.zip
+
+Put in `homework2/homework`
+
 ## Train
 
 ```shell
