@@ -5,13 +5,26 @@
 
 ```shell
 pip install -r homework2/requirements.txt
+
+# MacOS
 pip3 install torch torchvision torchaudio
+
+# Windows
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
 
 # Verify
 python3 -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'MPS (GPU) available: {torch.backends.mps.is_available()}')"
 ```
 
 ## Download Data
+
+```shell
+# MacOS
+curl -L -O https://www.cs.utexas.edu/~bzhou/dl_class/classification_data.zip && unzip classification_data.zip && rm classification_data.zip
+
+# Windows
+$url = "https://www.cs.utexas.edu/~bzhou/dl_class/classification_data.zip"; $file = "classification_data.zip"; Invoke-WebRequest -Uri $url -OutFile $file; Expand-Archive -Path $file -DestinationPath "."; Remove-Item -Path $file
+```
 
 https://www.cs.utexas.edu/~bzhou/dl_class/classification_data.zip
 
