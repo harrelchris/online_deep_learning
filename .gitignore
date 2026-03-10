@@ -1,5 +1,9 @@
 .idea/
 .local/
 .venv/
+logs/
 
 */classification_data
+
+.DS_Store
+*.pyc
