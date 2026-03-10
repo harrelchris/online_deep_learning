@@ -1,6 +1,7 @@
 .idea/
 .local/
 .venv/
+__pycache__/
 logs/
 
 */classification_data
