@@ -21,7 +21,7 @@ Put in `homework2/homework`
 
 ```shell
 python3 -m homework.train --model_name linear
-python3 -m homework.train --model_name mlp --num_epochs 75
+python3 -m homework.train --model_name mlp --num_epoch 75
 python3 -m homework.train --model_name mlp_deep --num_epoch 100
 python3 -m homework.train --model_name mlp_deep_residual --num_epoch 100
 ```
